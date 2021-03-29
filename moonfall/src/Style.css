@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: "Varela Round";
+}
+
+.dFlex, .produto-title, .produto-main-container, .produto-main-container .card, .produto-main-container .card .card-header, .btn, .footer, .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px 50px 20px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #272b34;
+}
+
+.produto-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 10.5vw;
+  font-family: "Robot Crush";
+}
+
+.produto-main-container {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin: 50px auto;
+  padding: 50px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.produto-main-container .card {
+  width: 30%;
+  border-radius: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
+  background-color: #272b34;
+}
+
+.produto-main-container .card .card-img {
+  margin-top: -5vw;
+}
+
+.produto-main-container .card .card-img img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.produto-main-container .card .card-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.produto-main-container .card .card-header h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.produto-main-container .card .card-header p {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  margin: 8px 0;
+}
+
+.produto-main-container .card .card-header .price {
+  font-size: 25px;
+  color: #fe8033;
+}
+
+.produto-main-container .card .card-header .price span {
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.produto-main-container .card:hover {
+  background-color: #2b3039;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.produto-main-container .card:hover .btn {
+  background-color: #fe8033;
+  color: #fff;
+}
+
+.btn {
+  width: 130px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 35px;
+  background-color: #2d343e;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+}
+
+/* Contactos */
+.header-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-container .header-title {
+  margin-top: 50px;
+  font-size: 10.5vw;
+  font-family: "Robot Crush";
+  color: #fff;
+}
+
+.header-container .header-subtitle {
+  color: #fff;
+}
+
+.form {
+  min-width: 1000px;
+  color: #fff;
+}
+
+/* Carousel */
+.carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-item {
+  padding: auto;
+}
+
+.contactos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Jumbotron */
+.jumbotron-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jumbotron-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 50px;
+}
+
+.jumbotron-item-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  font-family: "Roboto";
+}
+
+.jumbotron-left {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.image-responsive {
+  position: relative;
+  max-width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+/* Navbar */
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.logo-img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  /* Contactos */
+  .contactos-header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contactos-header-container .header-title {
+    margin-top: 50px;
+    font-size: 10.5vw;
+    font-family: "Robot Crush";
+    color: #fff;
+  }
+  .contactos-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-subtitle {
+    color: #fff;
+    text-align: center;
+  }
+  .form {
+    min-width: 600px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .produto-main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 50px 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .produto-main-container .card {
+    min-width: 250px;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 50px;
+    background-color: #272b34;
+  }
+  .produto-main-container .card .card-img {
+    margin-top: -5vw;
+  }
+  .produto-main-container .card .card-img img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .produto-main-container .card .card-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #fff;
+  }
+  .produto-main-container .card .card-header h2 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+  }
+  .produto-main-container .card .card-header p {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin: 8px 0;
+  }
+  .produto-main-container .card .card-header .price {
+    font-size: 24px;
+    color: #fe8033;
+  }
+  .produto-main-container .card .card-header .price span {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .produto-main-container .card:hover {
+    background-color: #2b3039;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    cursor: pointer;
+  }
+  .produto-main-container .card:hover .btn {
+    background-color: #fe8033;
+    color: #fff;
+  }
+  .btn {
+    width: 130px;
+    height: 35px;
+    font-size: 10px;
+    border-radius: 35px;
+    background-color: #2d343e;
+    color: rgba(255, 255, 255, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+  }
+  /* Jumbotron */
+  .jumbotron-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .jumbotron-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 50px;
+  }
+  .jumbotron-item-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    font-family: "Roboto";
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .jumbotron-left {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .image-responsive {
+    position: relative;
+    max-width: 100%;
+    min-width: 50px;
+    min-height: 50px;
+  }
+  /* Contactos */
+  .contactos-header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contactos-header-container .header-title {
+    margin-top: 50px;
+    font-size: 10.5vw;
+    font-family: "Robot Crush";
+    color: #fff;
+  }
+  .form {
+    min-width: 300px;
+    color: #fff;
+  }
+  .header-subtitle {
+    color: #fff;
+    text-align: center;
+  }
+  .contactos-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
