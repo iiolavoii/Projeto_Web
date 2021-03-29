@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,14 @@
           box-sizing: border-box;
 }
 
+/*
+* Durante o desenvolvimento do CSS descobri o SCSS nas minhas pesquisas que
+ facilita o processo do mesmo. Esta é minha primeira amostra. 
+
+Com o SCSS podemos definir variáveis, podemos por classes dentro de classes numa
+forma visualmente mais compreensivel e extender classes. (entre outras coisas) 
+
+*/
 .body {
   width: 100%;
   height: 100%;
@@ -12,6 +21,10 @@
   font-family: "Varela Round";
 }
 
+/*dFlex e uma classe que é um exemplo de configurações
+muito usada e será extendida entre varias classes.
+
+*/
 .dFlex, .produto-title, .produto-main-container, .produto-main-container .card, .produto-main-container .card .card-header, .btn, .footer, .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +47,7 @@
           flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 10px 50px 130px 50px;
+  padding: 10px 50px 20px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #272b34;
@@ -197,6 +210,7 @@
   padding: auto;
 }
 
+/* Contactos */
 .contactos-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +291,10 @@
   margin-left: 10px;
 }
 
+/*
+Como Contactos distorce o site com o tamanho dos inputs,
+defeni 2 media screen para que ficasse mais responsive.
+*/
 @media screen and (max-width: 1050px) {
   /* Contactos */
   .contactos-header-container {
@@ -322,6 +340,11 @@
   }
 }
 
+/*
+ Como solução para os produtos e para o homepage
+ Coloquei um limite de largura e coloquei o flexwrap para
+ que as colunas não encavalassem e ficassem distribuidas
+*/
 @media screen and (max-width: 600px) {
   .produto-main-container {
     display: -webkit-box;
@@ -535,4 +558,4 @@
             align-items: center;
   }
 }
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=Style_cometarios.css.map */
